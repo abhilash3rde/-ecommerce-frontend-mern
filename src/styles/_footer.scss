@@ -1,0 +1,149 @@
+/*footer Section*/
+.footer-sec {
+  width: 100%;
+}
+.footer-inside {
+  width: 100%;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+.footer-inside-content {
+  width: 14%;
+  padding-top: 40px;
+  float: left;
+  margin-left: 20px;
+}
+.footer-inside-content ul {
+  list-style-type: none;
+}
+.footer-inside-content ul li {
+  padding-top: 20px;
+  font-family: SuisseReg, sans-serif;
+  font-size: $fontSizeBody;
+  font-weight: 400;
+  line-height: 15px;
+  cursor: pointer;
+}
+.footer-inside-content ul li:first-child {
+  padding-top: 0;
+  font-family: SuisseThin, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  cursor: text;
+}
+.footer-inside-content-last {
+  width: 30%;
+  float: left;
+}
+.footer-inside-content-last h4 {
+  padding-top: 37px;
+  font-family: SuisseReg, sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 16px;
+}
+.footer-inside-content-last input {
+  width: 70%;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid #888;
+  background: transparent;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-family: SuisseThin, sans-serif;
+}
+
+.copy {
+  width: 100%;
+  padding: 30px 40px;
+  background-color: #252525;
+  background-color: var(--darkbgcolor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copy p {
+  font-size: 13px;
+  color: #cccccc;
+  font-family: "Suisse Regular", sans-serif;
+}
+.copy-right {
+  p {
+    cursor: pointer;
+  }
+}
+
+// media Query
+
+@media (max-width: 1024px) {
+  .footer-inside-content-last {
+    width: 100%;
+    float: none;
+    overflow: auto;
+    padding-bottom: 40px;
+    input {
+      width: 250px;
+      max-width: 100%;
+      margin-left: 60px;
+    }
+  }
+  .footer-inside-content {
+    width: 21%;
+  }
+  .inside-content-last {
+    margin-top: 10px;
+    border-top: 1px solid #888888;
+  }
+  .inside-content-last h4 {
+    padding-top: 20px;
+    padding-left: 60px;
+  }
+}
+
+.toggle-footer {
+  color: #333;
+  font-size: 17px;
+  font-family: SuisseThin, sans-serif;
+  font-weight: 600;
+}
+.card {
+  background: transparent;
+  border: none;
+}
+.footer-inside-content .toggle-footer {
+  background: transparent;
+  border-top: 1px solid rgba(51, 51, 51, 0.2);
+  padding: 20px 10px 0px 10px;
+}
+.card-body ul {
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 640px) {
+  .footer-inside-two {
+    width: 100%;
+    margin: 0;
+  }
+  .footer-inside-content ul li:first-child {
+    font-weight: 600;
+    font-family: SuisseThin, sans-serif;
+  }
+  .inside-content-last {
+    border-top: none;
+  }
+  .inside-content-last h4 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .footer-inside-content-last input {
+    margin-left: 15px;
+  }
+}
+@media (min-width: 640px) {
+  .footer-inside-content ul li:first-child {
+    color: #666;
+    padding: 0px 0 30px;
+  }
+}

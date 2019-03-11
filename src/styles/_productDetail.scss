@@ -1,0 +1,205 @@
+.product-detail-data {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  p {
+    font-size: $fontSizeBody; // 14px;
+  }
+}
+.product-title {
+  font-size: $fontSizeTitle;
+  color: $mainColor;
+}
+.ProductDetails {
+  border-top: 2px solid #333;
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+.ProductDetails-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ProductDetails-listItem {
+  padding: 26px 0;
+}
+.ProductDetails-listItem:not(:last-child) {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+.ProductDetails-listItem:nth-of-type(0) {
+  transition-delay: calc((0 * 100ms) + 200ms);
+}
+.ProductDetails-listItem:nth-of-type(1) {
+  transition-delay: calc((1 * 100ms) + 200ms);
+}
+.ProductDetails-listItem:nth-of-type(2) {
+  transition-delay: calc((2 * 100ms) + 200ms);
+}
+.ProductDetails-listItem:nth-of-type(3) {
+  transition-delay: calc((3 * 100ms) + 200ms);
+}
+.ProductDetails-listItem:nth-of-type(4) {
+  transition-delay: calc((4 * 100ms) + 200ms);
+}
+.ProductDetails-listItem:nth-of-type(5) {
+  transition-delay: calc((5 * 100ms) + 200ms);
+}
+.ProductDetails-itemTitle {
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: "Suisse Medium", sans-serif;
+  margin-bottom: 5px;
+}
+
+.ProductDetails-itemDescription {
+  font-size: 14px;
+  line-height: 1.4;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #666;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.ProductDetails-moreBtn {
+  float: right;
+  margin-left: 4px;
+}
+.ProductDetails-moreBtnIcon {
+  display: block;
+  height: 22px;
+  transition: all 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 22px;
+}
+.ProductDetails-moreBtnIcon .Glyph-addAndCloseWithCircle--circle {
+  fill: transparent;
+  stroke: #333;
+  stroke-width: 3px;
+  transition: fill 200ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.ProductDetails-moreBtnIcon .Glyph-addAndCloseWithCircle--plus {
+  fill: #333;
+  opacity: 1;
+  stroke: #333;
+  stroke-width: 2px;
+  transition: fill 200ms cubic-bezier(0.645, 0.045, 0.355, 1),
+    stroke 200ms cubic-bezier(0.645, 0.045, 0.355, 1),
+    opacity 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.ProductDetails-moreBtnIcon .Glyph-addAndCloseWithCircle--close {
+  fill: #fffef2;
+  fill: $mainBgColor;
+  opacity: 0;
+  stroke: #fffef2;
+  stroke: $mainBgColor;
+  stroke-width: 2px;
+  transition: opacity 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.ProductDetails-moreBtnIcon.is-active .Glyph-addAndCloseWithCircle--circle {
+  fill: #333;
+}
+.ProductDetails-moreBtnIcon.is-active .Glyph-addAndCloseWithCircle--plus {
+  opacity: 0;
+}
+.ProductDetails-moreBtnIcon.is-active .Glyph-addAndCloseWithCircle--close {
+  opacity: 1;
+}
+.ProductDetails-moreBtn {
+  background: transparent;
+  border: none;
+}
+// .ProductDetails-moreBtn:focus .ProductDetails-moreBtnIcon .Glyph-addAndCloseWithCircle--circle,
+// .ProductDetails-moreBtn:hover .ProductDetails-moreBtnIcon .Glyph-addAndCloseWithCircle--circle {
+// 	fill: #333;
+// }
+
+// Add To Cart Product Details sCss
+
+.cart-quantity {
+  float: left;
+  padding: 20px 0;
+  button {
+    background-color: $btnBg;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50%;
+    margin: 0 5px;
+    padding: 0 7px;
+  }
+  input {
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+  }
+}
+.ProductDetails-addtocart {
+  padding: 28px 0;
+  overflow: hidden;
+}
+.cart-btn-right button {
+  float: right;
+  background-color: #000000;
+  background-color: $btnBg;
+  border: none;
+  color: $mainBgColor; // #ffffff;
+  padding: 15px 90px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+  &:hover {
+    background-color: $btnHoverBg;
+  }
+}
+.bullt-icon-inner {
+  float: right;
+}
+.bullt-icon-inner form input {
+  margin-right: 0px;
+}
+
+.bullt-icon-inner label {
+  margin-right: 23px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: "Suisse Medium", sans-serif;
+}
+.bullet-icon-wrapper {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  padding-right: 30px;
+}
+.rating-icon {
+  display: block;
+}
+@media (max-width: 768px) {
+  .bullt-icon-inner {
+    width: 100%;
+    margin: auto;
+  }
+  form {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+
+.cart-product-image-wrap-short{
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+@media (min-width: 576px)
+{
+.modal-dialog-right {
+    max-width: 500px;
+    margin: 1.75rem 10%1.75rem auto;
+}
+}

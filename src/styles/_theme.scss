@@ -1,0 +1,83 @@
+body {
+  // // --logo: https://maxxbio.s3.ap-south-1.amazonaws.com/1.55084e+12-prd-maxxbio.png;
+  // // --favicon: https://maxxbio.s3.ap-south-1.amazonaws.com/1.55084e+12-prd-Q%20Rock-2018_1-12_1476395068.jpg;
+  // --theme-secnodary-color: #000000;
+  // --font-color: #000000;
+  // --link-color: #000000;
+  // --link-hover-color: #000000;
+  // --heading-color: #000000;
+  // --body-font-family: ABeeZee;
+  // --body-font-size: 14;
+  // --body-font-weight: normal;
+  // --title-font-size: 30;
+  // --title-font-weight: normal;
+  // --copyright-text: #800040;
+  // --color: #fff;
+  // --main_color: #8080ff;
+  // --maincolor: #333333;
+  // --main_bgcolor: #fffef2;
+  // --theme-secnodary-bgcolor: #800040;
+  // --themetertiarycolor: #000000;
+  // --themetertiarybgcolor: #800040;
+  // --buttoncolor: #000000;
+  // --butonhover: #ff8080;
+  // --darkbgcolor: #333333;
+  // --lightbgcolor: #8080ff;
+  // --maintextcolor: #333333;
+  // --shadow-color: #000000;
+  // --border-color: #000000;
+  // --popup-bg: #252525;
+  // --main-font-family: Alegreya Sans;
+  // --sub-font-family: ABeeZee;
+  // --parasize: 0;
+  // --headingsize1: 3;
+  // --headingsize2: 4;
+  // --headingsize3: 4;
+  // --headingsize4: 6;
+  // --headingsize5: 4;
+  // --headingsize6: 5;
+  // --maintitlesize: 30;
+  // --theme-primray-color: #800000;
+  // --copyright-status: 1;
+  // // padding-right: 17px;
+}
+$lightOne: #f6f5e8;
+$lightTwo: #fffef2;
+$lightTwo: var(--mainbgcolor);
+$small-font: 13px;
+$smallScr: 640px;
+$mediumScr: 1025px;
+
+$black20: rgba(0, 0, 0, 0.2);
+
+$fontSizeH1: calc(var(--headingsize1) * 1px);
+$fontSizeH2: calc(var(--headingsize2) * 1px);
+$fontSizeH3: calc(var(--headingsize3) * 1px);
+$fontSizeH4: calc(var(--headingsize4) * 1px);
+$fontSizeH5: calc(var(--headingsize5) * 1px);
+$fontSizeH6: calc(var(--headingsize6) * 1px);
+$fontSizeTitle: calc(var(--maintitlesize) * 1px);
+$fontSizeBody: calc(var(--bodyfontsize) * 1px);
+$titleWeight: var(--title-font-weight);
+// $fontSizeBodysmall
+$darkColor: var(--darkbgcolor);
+$lightColor: var(--lightbgcolor);
+
+$popupBg: $darkColor; //var(--popup-bg);
+$btnBg: var(--buttoncolor);
+$btnHoverBg: var(--butonhover);
+$mainColor: var(--maincolor);
+$mainBgColor: var(--mainbgcolor);
+$subBgColor: var(--themesecnodarybgcolor);
+$thirdBgColor: var(--themetertiarybgcolor);
+$darkBtnColor: var(--buttoncolor);
+
+@mixin defaultBorderBottom {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+@mixin boldBorderBottom {
+  border-bottom: 2px solid #333;
+}
+@mixin borderBtnColor($size: 2px, $color: $btnBg) {
+  border-bottom: $size solid $color;
+}
